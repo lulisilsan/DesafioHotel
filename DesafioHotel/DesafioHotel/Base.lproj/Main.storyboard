@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioHotel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-KS-BcK">
+                                <rect key="frame" x="0.0" y="151.5" width="414" height="216"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gZX-1G-pTj">
+                                <rect key="frame" x="0.0" y="409.5" width="414" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnI-uW-Gw5">
+                                <rect key="frame" x="20" y="95" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-yZ-2E0">
+                                <rect key="frame" x="20" y="380" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeL-Tl-7DN">
+                                <rect key="frame" x="181" y="666" width="54" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward client?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-Ki-or1">
+                                <rect key="frame" x="20" y="624" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="P0n-2q-0HD"/>
+                                    <constraint firstAttribute="width" constant="374" id="beI-Sr-Y8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SL-rj-Ha3">
+                                <rect key="frame" x="145" y="737" width="125" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="IFz-8q-H9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <state key="normal" title="Best Hotel"/>
+                                <connections>
+                                    <action selector="actionHotelResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPt-33-gIE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ixR-KS-BcK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="96P-es-WaV"/>
+                            <constraint firstItem="ZeL-Tl-7DN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="AOJ-lC-ahy"/>
+                            <constraint firstItem="bnI-uW-Gw5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BwM-ck-Mfo"/>
+                            <constraint firstItem="ZeL-Tl-7DN" firstAttribute="top" secondItem="SxX-Ki-or1" secondAttribute="bottom" constant="21" id="Eny-m6-szQ"/>
+                            <constraint firstItem="ixR-KS-BcK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LOn-YH-jef"/>
+                            <constraint firstItem="gZX-1G-pTj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lgv-1a-W41"/>
+                            <constraint firstItem="bnI-uW-Gw5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="OvM-mc-uvB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZeL-Tl-7DN" secondAttribute="trailing" constant="181" id="RKa-Kw-r84"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1SL-rj-Ha3" secondAttribute="trailing" constant="144" id="STL-zW-l08"/>
+                            <constraint firstItem="SxX-Ki-or1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aCO-kD-1FA"/>
+                            <constraint firstItem="gZX-1G-pTj" firstAttribute="top" secondItem="YUx-yZ-2E0" secondAttribute="bottom" constant="4" id="dbO-td-Mkx"/>
+                            <constraint firstItem="gZX-1G-pTj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4A-fN-VOA"/>
+                            <constraint firstItem="1SL-rj-Ha3" firstAttribute="top" secondItem="ZeL-Tl-7DN" secondAttribute="bottom" constant="40" id="gF4-8E-qRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bnI-uW-Gw5" secondAttribute="trailing" constant="20" id="iqm-r6-grO"/>
+                            <constraint firstItem="SxX-Ki-or1" firstAttribute="top" secondItem="YUx-yZ-2E0" secondAttribute="bottom" constant="218.5" id="kDm-sz-maE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SxX-Ki-or1" secondAttribute="trailing" constant="20" id="vXn-og-RPo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YUx-yZ-2E0" secondAttribute="trailing" constant="20" id="vui-Q2-hLm"/>
+                            <constraint firstItem="YUx-yZ-2E0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wOm-tt-bBi"/>
+                            <constraint firstItem="1SL-rj-Ha3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="waK-Eh-2Q2"/>
+                            <constraint firstItem="ixR-KS-BcK" firstAttribute="top" secondItem="bnI-uW-Gw5" secondAttribute="bottom" constant="31" id="wul-R2-Qfv"/>
+                            <constraint firstItem="YUx-yZ-2E0" firstAttribute="top" secondItem="ixR-KS-BcK" secondAttribute="bottom" constant="12.5" id="xKq-L1-CO1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1SL-rj-Ha3" secondAttribute="bottom" constant="90" id="xLC-k4-EDU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataPickerCheckIn" destination="ixR-KS-BcK" id="jC1-vB-giP"/>
+                        <outlet property="dataPickerCheckOut" destination="gZX-1G-pTj" id="bJ0-sk-Xbd"/>
+                        <outlet property="switchReward" destination="ZeL-Tl-7DN" id="tLX-dg-lso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
